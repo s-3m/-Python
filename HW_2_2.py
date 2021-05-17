@@ -1,5 +1,5 @@
 some_list = ['в', '5', 'часов', '17', 'минут', 'температура', 'воздуха', 'была', '+5', 'градусов']
-for i in some_list[:]:
+for i in some_list:
     if i.replace('+', '').isdigit():
         if len(i) == 1:
             some_list[some_list.index(i)] = '"'+'0'+i+'"'
