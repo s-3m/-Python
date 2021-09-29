@@ -5,6 +5,11 @@ response = get('http://www.cbr.ru/scripts/XML_daily.asp')
 encodings = utils.get_encoding_from_headers(response.headers)
 content = response.content.decode(encoding=encodings)
 
+
+# qwertyejkjekjwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+
+
+
 def currency_rates(currency):
     currency_in_content = content[content.find(currency):content.find(currency)+3]
     date_lst  = content[content.find('Date')+6:content.find('Date')+16].split('.')
